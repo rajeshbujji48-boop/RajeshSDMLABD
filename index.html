@@ -6,9 +6,13 @@
   <title>RajeshSDMLabs | Google Ads, Meta Ads & LinkedIn Ads Agency in India | Get More Leads</title>
   <meta name="description" content="India's performance-first ad agency. We run Google Ads, Meta Ads & LinkedIn Ads that fill your pipeline with qualified leads and drive real sales growth." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <meta name="theme-color" content="#0D1117" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
   <style>
+    @font-face { font-display: swap; }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -118,6 +122,7 @@
     }
     .hero-eyebrow .dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 1.5s infinite; }
     @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
 
     .hero h1 {
       font-family: 'Montserrat', sans-serif;
@@ -221,6 +226,7 @@
       display: flex;
       width: max-content;
       animation: marquee-scroll 28s linear infinite;
+      will-change: transform;
     }
     .marquee-track:hover { animation-play-state: paused; }
     .marquee-content {
@@ -586,6 +592,8 @@
     @media (max-width: 640px) {
       nav { padding: 0 4vw; }
       .nav-links { display: none; }
+      .hero { padding: 80px 4vw 30px; }
+      section { padding: 3rem 4vw; }
       .services-grid, .cases, .plans, .testi-grid, .faq-grid, .why-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr 1fr; }
       .footer-top { grid-template-columns: 1fr; }
@@ -594,6 +602,7 @@
       .testi-grid .testi-card:nth-child(3) { display: none; }
     }
   </style>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap" as="style" />
 </head>
 <body>
 <a href="#services" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;focus:static" onfocus="this.style.cssText='position:fixed;top:0;left:0;background:#FFD600;color:#0D1117;padding:0.75rem 1.5rem;z-index:9999;font-weight:700;font-size:1rem;'" onblur="this.style.cssText='position:absolute;left:-9999px;'" tabindex="0">Skip to main content</a>
@@ -659,7 +668,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="stats-card">
+    <div class="stats-card" style="contain:layout style;">
       <div class="stats-card-label">Client Performance Dashboard — Q1 2026</div>
       <div class="stats-grid">
         <div class="stat-box">
@@ -819,7 +828,7 @@
 </section>
 
 <!-- RESULTS -->
-<section class="results" id="results">
+<section class="results" style="content-visibility:auto;contain-intrinsic-size:0 500px;" id="results">
   <div class="section-header">
     <div class="section-label">Case Studies</div>
     <h2 class="section-title">Real Numbers. Real Indian Businesses.</h2>
@@ -860,7 +869,7 @@
 </section>
 
 <!-- WHY US -->
-<section class="why" id="why">
+<section class="why" style="content-visibility:auto;contain-intrinsic-size:0 500px;" id="why">
   <div class="why-grid">
     <div>
       <div class="section-label">Why SDM Labs</div>
@@ -926,7 +935,7 @@
 </section>
 
 <!-- PRICING -->
-<section class="pricing" id="pricing">
+<section class="pricing" style="content-visibility:auto;contain-intrinsic-size:0 500px;" id="pricing">
   <div class="section-header">
     <div class="section-label">Pricing</div>
     <h2 class="section-title">Simple, Honest Pricing</h2>
@@ -983,7 +992,7 @@
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials" id="testimonials">
+<section class="testimonials" style="content-visibility:auto;contain-intrinsic-size:0 500px;" id="testimonials">
   <div class="section-header">
     <div class="section-label">Client Love</div>
     <h2 class="section-title">What Our Clients Say</h2>
@@ -1017,7 +1026,7 @@
 </section>
 
 <!-- FAQ -->
-<section class="faq" id="faq">
+<section class="faq" style="content-visibility:auto;contain-intrinsic-size:0 500px;" id="faq">
   <div class="section-header">
     <div class="section-label">FAQ</div>
     <h2 class="section-title">Frequently Asked Questions</h2>
@@ -1083,7 +1092,7 @@
   <div class="section-label" style="color:#FFD600;">Free Audit</div>
   <h2 class="section-title" style="color:#ffffff;">Get Your Free Ads Audit</h2>
   <div class="lead-form" id="auditForm">
-    <p class="form-intro">Tell us about your business. We'll review your Google Ads, Meta Ads &amp; LinkedIn Ads and send you a free audit within 24 hours.</p>
+    <p class="form-intro">Tell us about your business. We'll review your Google Ads, Meta Ads &amp; LinkedIn Ads and send you a free audit within 48 hours.</p>
     <div class="form-field">
       <label for="f_name">Full Name *</label>
       <input id="f_name" type="text" placeholder="Rajesh Kumar" required aria-required="true" autocomplete="name" />
@@ -1117,7 +1126,7 @@
       </select>
     </div>
     <button class="form-submit" id="submitBtn" onclick="handleSubmit(event)" aria-label="Submit form to get free ads audit" type="button">Send Me My Free Audit →</button>
-    <p class="form-note">No spam. We will get back to you within 24 hours on WhatsApp.</p>
+    <p class="form-note">No spam. We will get back to you within 48 hours on WhatsApp.</p>
   </div>
 </section>
 
