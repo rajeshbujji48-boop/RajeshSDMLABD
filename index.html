@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SDM Labs – Google, Meta & LinkedIn Ads That Generate Leads & Sales in India</title>
+  <title>RajeshSDMLabs | Google Ads, Meta Ads & LinkedIn Ads Agency in India | Get More Leads</title>
   <meta name="description" content="India's performance-first ad agency. We run Google Ads, Meta Ads & LinkedIn Ads that fill your pipeline with qualified leads and drive real sales growth." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -25,7 +25,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Inter', sans-serif;
       background: var(--paper);
       color: var(--ink);
       font-size: 16px;
@@ -50,10 +50,10 @@
       width: 38px; height: 38px; background: #FFD600; border-radius: 8px;
       display: flex; align-items: center; justify-content: center;
       font-size: 1.2rem; font-weight: 900; color: #0D1117;
-      font-family: 'Plus Jakarta Sans', sans-serif; flex-shrink: 0;
+      font-family: 'Syne', sans-serif; flex-shrink: 0;
     }
     .nav-logo-text {
-      font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.15rem;
+      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.15rem;
       color: #FFFFFF; letter-spacing: -0.5px; line-height: 1.1;
     }
     .nav-logo-text span { color: #FFD600; }
@@ -120,7 +120,7 @@
     @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
 
     .hero h1 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Syne', sans-serif;
       font-size: clamp(2.4rem, 4.5vw, 3.8rem);
       font-weight: 800;
       line-height: 1.1;
@@ -177,7 +177,7 @@
     .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     .stat-box { }
     .stat-num {
-      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.5rem; font-weight: 800;
+      font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800;
       color: var(--white); line-height: 1;
       background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
@@ -230,7 +230,7 @@
       white-space: nowrap;
     }
     .marquee-item {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Syne', sans-serif;
       font-weight: 800;
       font-size: 1rem;
       color: #0A0A0F;
@@ -253,11 +253,11 @@
     section { padding: 5rem 5vw; }
     .section-label {
       display: inline-block;
-      font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em;
-      color: var(--accent); margin-bottom: 1rem;
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em;
+      color: #C93800; margin-bottom: 1rem;
     }
     .section-title {
-      font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800;
+      font-family: 'Syne', sans-serif; font-weight: 800;
       font-size: clamp(1.8rem, 3vw, 2.8rem);
       letter-spacing: -1px; line-height: 1.15; margin-bottom: 1rem;
     }
@@ -265,32 +265,50 @@
     .section-header { margin-bottom: 3.5rem; }
 
     /* ── SERVICES ── */
-    .services { background: var(--white); }
-    .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    .services { background: #0D1117; }
+    .services .section-label { color: #FFD600; }
+    .services .section-title { color: #ffffff; }
+    .services .section-sub { color: rgba(255,255,255,0.55); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
     .service-card {
-      border: 1.5px solid var(--rule);
-      border-radius: 16px; padding: 2rem;
-      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      background: #0D1117;
+      border: none;
+      border-right: 1px solid rgba(255,255,255,0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 2.25rem;
+      transition: background 0.2s;
       cursor: default;
     }
-    .service-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(255,71,19,0.1);
-    }
+    .service-card:nth-child(even) { border-right: none; }
+    .service-card:nth-last-child(-n+2) { border-bottom: none; }
+    .service-card:hover { background: #161B22; }
     .service-icon {
-      width: 48px; height: 48px; border-radius: 12px;
+      width: 56px; height: 56px;
+      background: #FFD600;
+      border-radius: 6px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.4rem; margin-bottom: 1.25rem;
+      font-size: 1.5rem; margin-bottom: 1.25rem;
+      flex-shrink: 0;
     }
-    .service-icon.g  { background: rgba(66,133,244,0.1); }
-    .service-icon.m  { background: rgba(24,119,242,0.1); }
-    .service-icon.li { background: rgba(0,119,181,0.1); }
-    .service-card h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem; }
-    .service-card p  { font-size: 0.875rem; color: var(--mid); line-height: 1.7; }
-    .service-features { list-style: none; margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.45rem; }
-    .service-features li { font-size: 0.8rem; color: var(--mid); display: flex; align-items: center; gap: 0.4rem; }
-    .service-features li::before { content: '→'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .service-tag {
+      font-size: 0.7rem; font-weight: 800;
+      color: #FFD600; letter-spacing: 0.1em;
+      text-transform: uppercase; margin-bottom: 0.6rem;
+    }
+    .service-card h3 {
+      font-family: 'Syne', sans-serif; font-size: 1.15rem;
+      font-weight: 800; margin-bottom: 0.75rem;
+      color: #ffffff; text-transform: uppercase; letter-spacing: -0.3px;
+    }
+    .service-card p { font-size: 0.875rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
+    .service-features { display: none; }
 
     /* ── HOW IT WORKS ── */
     .how { background: var(--paper); }
@@ -304,13 +322,13 @@
     .step-num {
       width: 64px; height: 64px; border-radius: 50%;
       background: var(--ink); color: var(--white);
-      font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.25rem;
+      font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.25rem;
       display: flex; align-items: center; justify-content: center;
       margin: 0 auto 1.5rem; position: relative; z-index: 1;
       box-shadow: 0 0 0 6px var(--paper), 0 0 0 8px var(--rule);
     }
     .step-num.active { background: var(--gradient); box-shadow: 0 0 0 6px var(--paper), 0 0 0 8px rgba(255,71,19,0.3); }
-    .step h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .step h4 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; }
     .step p  { font-size: 0.8rem; color: var(--mid); line-height: 1.6; }
 
     /* ── RESULTS ── */
@@ -332,10 +350,10 @@
       color: var(--accent); margin-bottom: 1rem;
       border: 1px solid rgba(255,71,19,0.35); padding: 0.25rem 0.6rem; border-radius: 4px;
     }
-    .case-card h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1rem; margin-bottom: 1rem; color: var(--white); }
+    .case-card h3 { font-family: 'Syne', sans-serif; font-size: 1rem; margin-bottom: 1rem; color: var(--white); }
     .case-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem; }
     .case-metric .num {
-      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.9rem; font-weight: 800;
+      font-family: 'Syne', sans-serif; font-size: 1.9rem; font-weight: 800;
       background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
     .case-metric .label { font-size: 0.72rem; color: rgba(255,255,255,0.45); }
@@ -367,7 +385,7 @@
     }
     .roas-meter { margin-bottom: 2rem; }
     .roas-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.45); margin-bottom: 0.5rem; }
-    .roas-value { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 3rem; font-weight: 800;
+    .roas-value { font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800;
       background: linear-gradient(90deg, #1A56FF, #FF4713); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .roas-sub { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 0.25rem; }
     .bar-rows { display: flex; flex-direction: column; gap: 0.75rem; }
@@ -398,7 +416,7 @@
     }
     .plan-name { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--mid); margin-bottom: 0.75rem; }
     .plan.featured .plan-name { color: rgba(255,255,255,0.55); }
-    .plan-price { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.2rem; font-weight: 800; margin-bottom: 0.25rem; }
+    .plan-price { font-family: 'Syne', sans-serif; font-size: 2.2rem; font-weight: 800; margin-bottom: 0.25rem; }
     .plan-cycle { font-size: 0.8rem; color: var(--mid); margin-bottom: 1.75rem; }
     .plan.featured .plan-cycle { color: rgba(255,255,255,0.5); }
     .plan-features-list { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 2rem; }
@@ -433,7 +451,7 @@
     .avatar {
       width: 40px; height: 40px; border-radius: 50%;
       background: var(--gradient); display: flex; align-items: center; justify-content: center;
-      color: white; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 0.9rem;
+      color: white; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 0.9rem;
     }
     .author-name { font-weight: 600; font-size: 0.875rem; }
     .author-role { font-size: 0.75rem; color: var(--mid); }
@@ -481,7 +499,7 @@
     .form-field input, .form-field select, .form-field textarea {
       background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15);
       border-radius: 8px; padding: 0.75rem 1rem;
-      font-size: 0.9rem; color: var(--white); font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.9rem; color: var(--white); font-family: 'Inter', sans-serif;
       transition: border-color 0.2s;
       outline: none;
     }
@@ -494,7 +512,7 @@
       width: 100%; padding: 1rem; background: var(--gradient); color: var(--white);
       border: none; border-radius: 8px; font-size: 1rem; font-weight: 700;
       cursor: pointer; transition: opacity 0.2s, transform 0.15s;
-      box-shadow: 0 4px 20px rgba(255,71,19,0.4); font-family: 'Plus Jakarta Sans', sans-serif;
+      box-shadow: 0 4px 20px rgba(255,71,19,0.4); font-family: 'Inter', sans-serif;
     }
     .form-submit:hover { opacity: 0.9; transform: translateY(-1px); }
     .form-note { font-size: 0.75rem; color: rgba(255,255,255,0.35); margin-top: 1rem; text-align: center; }
@@ -505,7 +523,7 @@
       padding: 3rem 5vw 2rem;
     }
     .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
-    .footer-logo { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--white); margin-bottom: 0.75rem; }
+    .footer-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.3rem; color: var(--white); margin-bottom: 0.75rem; }
     .footer-logo span { color: var(--accent); }
     .footer-desc { font-size: 0.82rem; line-height: 1.7; max-width: 260px; }
     .footer-col h5 { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.7); margin-bottom: 1rem; }
@@ -554,7 +572,8 @@
     @media (max-width: 1024px) {
       .hero { grid-template-columns: 1fr; }
       .hero-right { display: none; }
-      .services-grid, .cases, .plans, .testi-grid { grid-template-columns: 1fr 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .cases, .plans, .testi-grid { grid-template-columns: 1fr 1fr; }
       .steps { grid-template-columns: 1fr 1fr; }
       .steps::before { display: none; }
       .footer-top { grid-template-columns: 1fr 1fr; }
@@ -569,7 +588,6 @@
       .nav-links { display: none; }
       .services-grid, .cases, .plans, .testi-grid, .faq-grid, .why-grid { grid-template-columns: 1fr; }
       .steps { grid-template-columns: 1fr 1fr; }
-      .form-row { grid-template-columns: 1fr; }
       .footer-top { grid-template-columns: 1fr; }
       .plan.featured { transform: scale(1); }
       .cases .case-card:nth-child(3) { display: none; }
@@ -578,9 +596,10 @@
   </style>
 </head>
 <body>
+<a href="#services" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;focus:static" onfocus="this.style.cssText='position:fixed;top:0;left:0;background:#FFD600;color:#0D1117;padding:0.75rem 1.5rem;z-index:9999;font-weight:700;font-size:1rem;'" onblur="this.style.cssText='position:absolute;left:-9999px;'" tabindex="0">Skip to main content</a>
 
 <!-- NAV -->
-<nav>
+<nav role="navigation" aria-label="Main navigation">
   <a class="nav-logo" href="#">
     <div class="nav-logo-icon">R</div>
     <div class="nav-logo-text">Rajesh<span>SDMLabs</span></div>
@@ -595,7 +614,7 @@
   </ul>
   <a class="nav-phone" href="tel:+918790282479">+91 87902 82479</a>
   <a class="nav-cta" href="#contact">Free Audit</a>
-  <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+  <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Open navigation menu" type="button">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -615,7 +634,7 @@
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" role="main" id="main-content">
   <div class="hero-left">
     <div class="hero-eyebrow"><span class="dot"></span>Digital Advertising Agency — India</div>
     <h1>We Run Ads That Bring You <em>Real Clients</em></h1>
@@ -711,50 +730,60 @@
 <section class="services" id="services">
   <div class="section-header">
     <div class="section-label">What We Do</div>
-    <h2 class="section-title">Three Platforms. One Growth Engine.</h2>
-    <p class="section-sub">We don't dabble. We specialise in the platforms that drive the most qualified leads for Indian businesses — and we have the numbers to prove it.</p>
+    <h2 class="section-title">Everything You Need to Get More Leads</h2>
+    <p class="section-sub">From paid ads to local visibility — we handle the marketing so you can focus on running your business.</p>
   </div>
   <div class="services-grid">
+
     <div class="service-card">
-      <div class="service-icon g">🔵</div>
+      <div class="service-icon">📈</div>
+      <div class="service-tag">Instant Leads</div>
       <h3>Google Ads Management</h3>
-      <p>Capture demand at the exact moment your ideal customers are searching. Search, Shopping, Display & YouTube — set up and optimised for maximum ROI.</p>
-      <ul class="service-features">
-        <li>Search & Shopping Campaigns</li>
-        <li>Performance Max (PMax)</li>
-        <li>YouTube Pre-Roll Ads</li>
-        <li>Remarketing & Display</li>
-        <li>Conversation Tracking</li>
-        <li>Conversion Tracking Setup</li>
-        <li>Landing Page Optimisation</li>
-      </ul>
+      <p>We get your campaigns live quickly and target the searches that matter in your area — so the next person searching finds you, not your competitor.</p>
     </div>
+
     <div class="service-card">
-      <div class="service-icon m">📘</div>
+      <div class="service-icon">📱</div>
+      <div class="service-tag">Social Advertising</div>
       <h3>Meta Ads Management</h3>
-      <p>Build a predictable pipeline from 500M+ Indian social media users. Creative-first campaigns that generate awareness, leads and direct sales.</p>
-      <ul class="service-features">
-        <li>Lead Generation Campaigns</li>
-        <li>Conversion & Sales Ads</li>
-        <li>Lookalike Audience Building</li>
-        <li>WhatsApp Lead Ads</li>
-        <li>Retargeting Funnels</li>
-        <li>Creative A/B Testing</li>
-      </ul>
+      <p>Reach your ideal customers on Facebook and Instagram. Creative-first campaigns that generate leads, build awareness, and drive direct sales.</p>
     </div>
+
     <div class="service-card">
-      <div class="service-icon li">💼</div>
+      <div class="service-icon">💼</div>
+      <div class="service-tag">B2B Lead Generation</div>
       <h3>LinkedIn Lead Generation</h3>
-      <p>Reach decision-makers, founders & professionals in India. The most powerful B2B ad platform for high-ticket services and enterprise deals.</p>
-      <ul class="service-features">
-        <li>Sponsored Content & InMail</li>
-        <li>Lead Gen Forms</li>
-        <li>Account-Based Marketing</li>
-        <li>Job Title & Seniority Targeting</li>
-        <li>Company Retargeting</li>
-        <li>Thought Leadership Ads</li>
-      </ul>
+      <p>Target decision-makers, founders and professionals. The most powerful platform for high-ticket B2B services and enterprise deals in India.</p>
     </div>
+
+    <div class="service-card">
+      <div class="service-icon">🌐</div>
+      <div class="service-tag">Get Found · Convert</div>
+      <h3>Lead-Gen Websites</h3>
+      <p>Fast, mobile-first websites built to convert visitors into leads. Click-to-call, instant quote forms, and SEO built in from day one.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🔍</div>
+      <div class="service-tag">Rank · Free Traffic</div>
+      <h3>Local SEO</h3>
+      <p>We optimise your pages and build local backlinks to improve your rankings over time — a sustainable, long-term way to grow organic leads.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">⭐</div>
+      <div class="service-tag">Local Visibility</div>
+      <h3>Google Business Profile</h3>
+      <p>We optimise and manage your Google Business Profile to improve visibility in local Map results, plus help you collect a steady stream of 5-star reviews.</p>
+    </div>
+
+    <div class="service-card" style="border-bottom:none;">
+      <div class="service-icon">🏷️</div>
+      <div class="service-tag">Track · Optimise</div>
+      <h3>Conversion Tracking</h3>
+      <p>We set up Google Tag Manager and conversion tracking so you know exactly which ads bring leads — and stop wasting budget on what doesn't work.</p>
+    </div>
+
   </div>
 </section>
 
@@ -997,7 +1026,7 @@
   <div class="faq-accordion">
 
     <div class="faq-card">
-      <button class="faq-toggle" onclick="toggleFaq(this)">
+      <button class="faq-toggle" onclick="toggleFaq(this)" aria-expanded="false" aria-label="How soon will I start getting leads after launching ads?">
         <span>How soon will I start getting leads after launching ads?</span>
         <span class="faq-icon">+</span>
       </button>
@@ -1007,7 +1036,7 @@
     </div>
 
     <div class="faq-card">
-      <button class="faq-toggle" onclick="toggleFaq(this)">
+      <button class="faq-toggle" onclick="toggleFaq(this)" aria-expanded="false" aria-label="What is the minimum ad budget I need to get started?">
         <span>What is the minimum ad budget I need to get started?</span>
         <span class="faq-icon">+</span>
       </button>
@@ -1017,7 +1046,7 @@
     </div>
 
     <div class="faq-card">
-      <button class="faq-toggle" onclick="toggleFaq(this)">
+      <button class="faq-toggle" onclick="toggleFaq(this)" aria-expanded="false" aria-label="Do I own my ad accounts, or does SDM Labs own them?">
         <span>Do I own my ad accounts, or does SDM Labs own them?</span>
         <span class="faq-icon">+</span>
       </button>
@@ -1027,7 +1056,7 @@
     </div>
 
     <div class="faq-card">
-      <button class="faq-toggle" onclick="toggleFaq(this)">
+      <button class="faq-toggle" onclick="toggleFaq(this)" aria-expanded="false" aria-label="How do you track leads and prove ROI?">
         <span>How do you track leads and prove ROI?</span>
         <span class="faq-icon">+</span>
       </button>
@@ -1037,7 +1066,7 @@
     </div>
 
     <div class="faq-card">
-      <button class="faq-toggle" onclick="toggleFaq(this)">
+      <button class="faq-toggle" onclick="toggleFaq(this)" aria-expanded="false" aria-label="What if my campaigns don't perform? Is there a guarantee?">
         <span>What if my campaigns don't perform? Is there a guarantee?</span>
         <span class="faq-icon">+</span>
       </button>
@@ -1051,63 +1080,43 @@
 
 <!-- LEAD FORM -->
 <section class="lead" id="contact">
-  <div class="section-label">Free Audit</div>
-  <h2 class="section-title">Get Your Free Google, Meta & LinkedIn Ads Audit</h2>
-  <p style="color:rgba(255,255,255,0.55); max-width:500px; margin:0 auto; font-size:1rem;">We will review your ad accounts, find what is not working, and show you how to improve — at no cost.</p>
+  <div class="section-label" style="color:#FFD600;">Free Audit</div>
+  <h2 class="section-title" style="color:#ffffff;">Get Your Free Ads Audit</h2>
   <div class="lead-form" id="auditForm">
-    <div class="form-row">
-      <div class="form-field">
-        <label>Your Name *</label>
-        <input id="f_name" type="text" placeholder="Rajesh Kumar" required />
-      </div>
-      <div class="form-field">
-        <label>Business Name *</label>
-        <input id="f_business" type="text" placeholder="Your Company Pvt Ltd" required />
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-field">
-        <label>Phone / WhatsApp *</label>
-        <input id="f_phone" type="tel" placeholder="+91 87902 82479" required />
-      </div>
-      <div class="form-field">
-        <label>Email Address *</label>
-        <input id="f_email" type="email" placeholder="you@company.com" required />
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-field">
-        <label>Industry</label>
-        <select id="f_industry">
-          <option value="">Select your industry</option>
-          <option>Real Estate</option>
-          <option>EdTech / Coaching</option>
-          <option>Healthcare / Clinics</option>
-          <option>B2B SaaS / Software</option>
-          <option>Legal / Finance</option>
-          <option>D2C / eCommerce</option>
-          <option>Hospitality / Travel</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-field">
-        <label>Current Monthly Ad Budget</label>
-        <select id="f_budget">
-          <option value="">Select budget range</option>
-          <option>No Ads Yet (Starting Fresh)</option>
-          <option>Under ₹25,000/month</option>
-          <option>₹25,000 – ₹50,000/month</option>
-          <option>₹50,000 – ₹1 Lakh/month</option>
-          <option>₹1 Lakh – ₹3 Lakhs/month</option>
-          <option>₹3 Lakhs+/month</option>
-        </select>
-      </div>
+    <p class="form-intro">Tell us about your business. We'll review your Google Ads, Meta Ads &amp; LinkedIn Ads and send you a free audit within 24 hours.</p>
+    <div class="form-field">
+      <label for="f_name">Full Name *</label>
+      <input id="f_name" type="text" placeholder="Rajesh Kumar" required aria-required="true" autocomplete="name" />
     </div>
     <div class="form-field">
-      <label>What's your main challenge right now? (optional)</label>
-      <textarea id="f_challenge" rows="3" placeholder="e.g. High cost per lead, low quality leads, no visibility on ROI..."></textarea>
+      <label for="f_business">Company Name *</label>
+      <input id="f_business" type="text" placeholder="Your Company Pvt Ltd" required aria-required="true" autocomplete="organization" />
     </div>
-    <button class="form-submit" id="submitBtn" onclick="handleSubmit(event)">Get Free Ads Audit</button>
+    <div class="form-field">
+      <label for="f_phone">Phone *</label>
+      <input id="f_phone" type="tel" placeholder="+91 87902 82479" required aria-required="true" autocomplete="tel" />
+    </div>
+    <div class="form-field">
+      <label for="f_email">Email *</label>
+      <input id="f_email" type="email" placeholder="you@company.com" required aria-required="true" autocomplete="email" />
+    </div>
+    <div class="form-field">
+      <label for="f_city">City / Service Area</label>
+      <input id="f_city" type="text" placeholder="e.g. Hyderabad, Mumbai, Delhi" autocomplete="address-level2" />
+    </div>
+    <div class="form-field">
+      <label for="f_challenge">Biggest Goal Right Now</label>
+      <select id="f_challenge">
+        <option value="">Select your goal</option>
+        <option>More phone calls / leads</option>
+        <option>Lower cost per lead</option>
+        <option>Better lead quality</option>
+        <option>Increase online sales</option>
+        <option>Brand awareness</option>
+        <option>Scale existing campaigns</option>
+      </select>
+    </div>
+    <button class="form-submit" id="submitBtn" onclick="handleSubmit(event)" aria-label="Submit form to get free ads audit" type="button">Send Me My Free Audit →</button>
     <p class="form-note">No spam. We will get back to you within 24 hours on WhatsApp.</p>
   </div>
 </section>
@@ -1154,7 +1163,7 @@
 </footer>
 
 <!-- WhatsApp Float -->
-<a class="wa-float" href="https://wa.me/918790282479?text=Hi%20Rajesh%2C%20I%20want%20a%20free%20ads%20audit" target="_blank" title="Chat on WhatsApp">💬</a>
+<a class="wa-float" href="https://wa.me/918790282479?text=Hi%20Rajesh%2C%20I%20want%20a%20free%20ads%20audit" target="_blank" title="Chat on WhatsApp" aria-label="Chat with us on WhatsApp" rel="noopener noreferrer">💬</a>
 
 <script>
   function toggleFaq(btn) {
@@ -1182,9 +1191,8 @@
     const business  = document.getElementById('f_business').value.trim();
     const phone     = document.getElementById('f_phone').value.trim();
     const email     = document.getElementById('f_email').value.trim();
-    const industry  = document.getElementById('f_industry').value;
-    const budget    = document.getElementById('f_budget').value;
-    const challenge = document.getElementById('f_challenge').value.trim();
+    const city      = document.getElementById('f_city').value.trim();
+    const challenge = document.getElementById('f_challenge').value;
 
     if (!name || !business || !phone || !email) {
       alert('Please fill in all required fields.');
@@ -1196,7 +1204,7 @@
     btn.disabled = true;
     btn.style.opacity = '0.7';
 
-    const payload = { name, business, phone, email, industry, budget, challenge };
+    const payload = { name, business, phone, email, city, challenge };
 
     try {
       await fetch(APPS_SCRIPT_URL, {
