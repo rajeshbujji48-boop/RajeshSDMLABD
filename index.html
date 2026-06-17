@@ -1162,14 +1162,122 @@
   <div class="footer-bottom">
     <p>© 2026 RajeshSDMLabs. All rights reserved.</p>
     <div class="footer-bottom-links">
-      <a href="#">Privacy Policy</a>
+      <a href="privacy.html">Privacy Policy</a>
       <span class="sep">·</span>
-      <a href="#">Terms</a>
+      <a href="#" onclick="openTerms(); return false;">Terms</a>
       <span class="sep">·</span>
       <span class="footer-disclaimer">*Results vary by market and budget.</span>
     </div>
   </div>
 </footer>
+
+<!-- TERMS MODAL -->
+<div id="termsModal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.75); overflow-y:auto; padding: 2rem 1rem;">
+  <div style="max-width:780px; margin:0 auto; background:#181c27; border-radius:14px; border:1px solid #252a38; overflow:hidden;">
+    <!-- Modal Header -->
+    <div style="background:#0f1117; padding:1.5rem 2rem; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #252a38;">
+      <div>
+        <p style="font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">Legal</p>
+        <h2 style="font-family:'Montserrat',sans-serif; font-size:1.4rem; color:#fff; font-weight:800;">Terms &amp; Conditions</h2>
+      </div>
+      <button onclick="closeTerms()" style="background:rgba(255,255,255,0.1); border:none; color:#fff; width:36px; height:36px; border-radius:50%; font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0;">&times;</button>
+    </div>
+    <!-- Modal Body -->
+    <div style="padding:2rem; color:#e8eaf0; font-family:'DM Sans',sans-serif; font-size:14.5px; line-height:1.8;">
+
+      <p style="margin-bottom:1.5rem;">These Terms &amp; Conditions ("Terms") govern your use of the website at <strong>rajesh.sdmlabs.in</strong> and any services provided by RajeshSdmlabs ("we," "us," or "our"). By accessing our website or engaging our services, you agree to these Terms.</p>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">01</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Our Services</h3>
+        <p>RajeshSdmlabs provides digital marketing services — including Google Ads management, SEO, local SEO, Google Business Profile management, Meta Ads &amp; LinkedIn Ads, and related services. The specific scope, deliverables, and fees will be set out in a separate written agreement or proposal.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">02</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Free Audit</h3>
+        <p>We offer a complimentary audit of your Google Ads, Meta Ads, LinkedIn Ads, SEO, and local SEO. This audit is for informational purposes only, carries no obligation, and does not create a client relationship. We aim to deliver within 48 hours but do not guarantee a specific delivery time.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">03</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">No Guarantee of Results</h3>
+        <p>Digital marketing results depend on many factors outside our control, including your market, budget, competition, and search engine algorithms. We do not guarantee specific rankings, lead volumes, conversion rates, revenue, or return on investment. Any case studies or examples reflect past performance and are not a promise of future results.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">04</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Fees &amp; Payment</h3>
+        <p>Management fees are billed monthly as agreed, with no long-term contract unless stated. Advertising spend is separate and billed directly by the platform. Either party may pause or cancel with 30 days' written notice.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">05</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Client Responsibilities</h3>
+        <p>To deliver our services, we may need access to your accounts (Google Ads, Analytics, Business Profile, website). You agree to provide accurate information and timely access, and confirm you are authorized to grant such access. You remain responsible for the accuracy and legality of your own business content.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">06</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Intellectual Property</h3>
+        <p>All content on this website — including text, graphics, logos, and design — is owned by RajeshSdmlabs or its licensors and protected by applicable law. You may not copy, reproduce, or reuse it without our written permission.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">07</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Confidentiality</h3>
+        <p>We treat client account data and business information as confidential and use it only to provide our services. Case studies on this website are anonymized where confidentiality applies.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">08</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Third-Party Platforms</h3>
+        <p>Our services rely on third-party platforms (Google, Meta, etc.) with their own terms. We are not responsible for changes those platforms make, account suspensions caused by client actions, or outages outside our control.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">09</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Limitation of Liability</h3>
+        <p>To the fullest extent permitted by law, RajeshSdmlabs is not liable for any indirect, incidental, or consequential damages, or for lost profits or revenue. Our total liability will not exceed the fees you paid in the three months before the claim arose.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">10</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Disclaimer</h3>
+        <p>This website and the free audit are provided "as is" without warranties of any kind, express or implied. We do not warrant the website will be uninterrupted, error-free, or free of harmful components.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">11</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Governing Law</h3>
+        <p>These Terms are governed by applicable law. Any disputes will be handled in the courts of the applicable jurisdiction.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">12</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Changes to These Terms</h3>
+        <p>We may update these Terms from time to time. Changes take effect when posted with a revised "Last updated" date. Continued use means you accept the updated Terms.</p>
+      </div>
+
+      <div style="border-top:1px solid #252a38; padding-top:1.25rem; margin-top:1.25rem;">
+        <p style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#4f7cff; margin-bottom:6px;">13</p>
+        <h3 style="font-family:'Montserrat',sans-serif; color:#fff; font-size:1rem; margin-bottom:10px;">Contact Us</h3>
+        <div style="background:#0f1117; border:1px solid #252a38; border-radius:8px; padding:1.25rem 1.5rem; margin-top:8px;">
+          <p style="color:#fff; font-weight:600; margin-bottom:6px;">RajeshSdmlabs</p>
+          <p style="margin-bottom:4px;">Email: <a href="mailto:hello@sdmlabs.in" style="color:#4f7cff; text-decoration:none;">hello@sdmlabs.in</a></p>
+          <p style="margin-bottom:4px;">Phone: <a href="tel:+918790282479" style="color:#4f7cff; text-decoration:none;">+91 8790282479</a></p>
+          <p>Website: <a href="https://rajesh.sdmlabs.in" style="color:#4f7cff; text-decoration:none;">rajesh.sdmlabs.in</a></p>
+        </div>
+      </div>
+
+      <!-- Close Button -->
+      <div style="text-align:center; margin-top:2rem;">
+        <button onclick="closeTerms()" style="background:linear-gradient(135deg,#FF4713,#FF8A00); color:#fff; border:none; padding:0.75rem 2.5rem; border-radius:8px; font-size:0.95rem; font-weight:700; cursor:pointer; font-family:'DM Sans',sans-serif;">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <!-- WhatsApp Float -->
 <a class="wa-float" href="https://wa.me/918790282479?text=Hi%20Rajesh%2C%20I%20want%20a%20free%20ads%20audit" target="_blank" title="Chat on WhatsApp" aria-label="Chat with us on WhatsApp" rel="noopener noreferrer">💬</a>
@@ -1244,6 +1352,21 @@
   document.querySelectorAll('.why-visual').forEach(el => observer.observe(el));
 </script>
 <script>
+function openTerms() {
+  var modal = document.getElementById('termsModal');
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+function closeTerms() {
+  var modal = document.getElementById('termsModal');
+  modal.style.display = 'none';
+  document.body.style.overflow = '';
+}
+// Close modal when clicking outside
+document.getElementById('termsModal').addEventListener('click', function(e) {
+  if (e.target === this) closeTerms();
+});
+
 function toggleMobileNav() {
   var nav = document.getElementById('mobileNav');
   nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
