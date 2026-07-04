@@ -180,38 +180,46 @@
     .audit-card {
       position: relative;
       background: var(--ink);
-      border-radius: 16px;
-      padding: 2.5rem 2rem 2rem;
+      border-radius: 14px;
+      padding: 1.75rem 1.75rem 1.5rem;
       color: var(--white);
       box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      overflow: visible;
     }
     .audit-badge {
-      position: absolute; top: -14px; right: 1.5rem;
-      background: var(--accent); color: var(--ink);
-      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em;
-      padding: 0.4rem 0.9rem; border-radius: 5px; text-transform: uppercase;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      position: absolute; top: 14%; right: -0.5rem;
+      background: #B6FF00; color: var(--ink);
+      font-size: 0.68rem; font-weight: 800; letter-spacing: 0.04em;
+      padding: 0.4rem 0.8rem; border-radius: 4px; text-transform: uppercase;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+      transform: rotate(-8deg);
+      white-space: nowrap;
     }
     .audit-label {
       display: flex; align-items: center; gap: 0.5rem;
-      font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em;
-      text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 1rem;
+      font-size: 0.85rem; font-weight: 800; letter-spacing: 0.02em;
+      text-transform: uppercase; color: var(--white); margin-bottom: 1.1rem;
     }
-    .audit-label .sq { width: 10px; height: 10px; background: var(--accent); flex-shrink: 0; }
+    .audit-label .sq { width: 8px; height: 8px; background: var(--accent); flex-shrink: 0; }
+    .audit-label .hl { color: var(--accent); }
+    .audit-reports-row { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.35rem; }
     .audit-num {
       font-family: 'Montserrat', sans-serif; font-weight: 900;
-      font-size: 4rem; line-height: 1; color: var(--accent); margin-bottom: 0.5rem;
+      font-size: 3rem; line-height: 1; color: var(--accent);
+    }
+    .audit-reports-label {
+      font-family: 'Montserrat', sans-serif; font-weight: 800;
+      font-size: 1.2rem; color: var(--white); text-transform: uppercase;
     }
     .audit-sub {
-      font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em;
-      color: rgba(255,255,255,0.75); text-transform: uppercase; margin-bottom: 1.75rem;
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.65); text-transform: uppercase; margin-bottom: 1.75rem;
     }
-    .audit-divider { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin-bottom: 1.75rem; }
     .audit-footer { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; flex-wrap: wrap; }
-    .audit-plan { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--white); }
-    .audit-plan-sub { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; color: rgba(255,255,255,0.6); text-transform: uppercase; margin-top: 0.2rem; }
-    .audit-fee { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--accent); text-align: right; }
-    .audit-fee-sub { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; color: rgba(255,255,255,0.6); text-transform: uppercase; margin-top: 0.2rem; text-align: right; }
+    .audit-plan { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--white); }
+    .audit-plan-sub { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; color: rgba(255,255,255,0.55); text-transform: uppercase; margin-top: 0.15rem; }
+    .audit-fee { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--accent); text-align: right; }
+    .audit-fee-sub { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; color: rgba(255,255,255,0.55); text-transform: uppercase; margin-top: 0.15rem; text-align: right; }
 
     @media (max-width: 900px) {
       .audit-card { margin-top: 2rem; }
@@ -727,17 +735,19 @@
   <div class="hero-right">
     <div class="audit-card">
       <span class="audit-badge">Report in 48 Hrs</span>
-      <div class="audit-label"><span class="sq"></span>Your Free Audit Covers</div>
-      <div class="audit-num">3</div>
-      <div class="audit-sub">Reports: Ads · SEO · Local</div>
-      <hr class="audit-divider" />
+      <div class="audit-label"><span class="sq"></span>Your <span class="hl">Free</span> Audit Covers</div>
+      <div class="audit-reports-row">
+        <span class="audit-num">3</span>
+        <span class="audit-reports-label">Reports:</span>
+      </div>
+      <div class="audit-sub">Ads · SEO · Local</div>
       <div class="audit-footer">
         <div>
           <div class="audit-plan">90-Day</div>
           <div class="audit-plan-sub">Action Plan</div>
         </div>
         <div>
-          <div class="audit-fee">$0</div>
+          <div class="audit-fee">₹0</div>
           <div class="audit-fee-sub">Setup Fees</div>
         </div>
       </div>
