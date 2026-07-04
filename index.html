@@ -107,14 +107,18 @@
     /* ── HERO ── */
     .hero {
       min-height: auto;
-      display: block;
-      max-width: 780px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 90px 5vw 60px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 4rem;
+      padding: 90px 5vw 40px;
       position: relative;
       overflow: hidden;
     }
+    .hero-left { text-align: left; }
+    .hero-left .hero-sub { margin: 0 0 2.5rem; }
+    .hero-left .hero-actions { justify-content: flex-start; }
+    .hero-left .hero-trust { justify-content: flex-start; }
     .hero::before {
       content: '';
       position: absolute; right: -200px; top: -200px;
@@ -171,8 +175,47 @@
     .trust-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--mid); }
     .trust-item svg { color: #22C55E; flex-shrink: 0; }
 
-    /* Hero Right – Stats Card */
+    /* Hero Right – Audit Covers Card */
     .hero-right { position: relative; }
+    .audit-card {
+      position: relative;
+      background: var(--ink);
+      border-radius: 16px;
+      padding: 2.5rem 2rem 2rem;
+      color: var(--white);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    }
+    .audit-badge {
+      position: absolute; top: -14px; right: 1.5rem;
+      background: var(--accent); color: var(--ink);
+      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.06em;
+      padding: 0.4rem 0.9rem; border-radius: 5px; text-transform: uppercase;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    }
+    .audit-label {
+      display: flex; align-items: center; gap: 0.5rem;
+      font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 1rem;
+    }
+    .audit-label .sq { width: 10px; height: 10px; background: var(--accent); flex-shrink: 0; }
+    .audit-num {
+      font-family: 'Montserrat', sans-serif; font-weight: 900;
+      font-size: 4rem; line-height: 1; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .audit-sub {
+      font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em;
+      color: rgba(255,255,255,0.75); text-transform: uppercase; margin-bottom: 1.75rem;
+    }
+    .audit-divider { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin-bottom: 1.75rem; }
+    .audit-footer { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; flex-wrap: wrap; }
+    .audit-plan { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--white); }
+    .audit-plan-sub { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; color: rgba(255,255,255,0.6); text-transform: uppercase; margin-top: 0.2rem; }
+    .audit-fee { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--accent); text-align: right; }
+    .audit-fee-sub { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; color: rgba(255,255,255,0.6); text-transform: uppercase; margin-top: 0.2rem; text-align: right; }
+
+    @media (max-width: 900px) {
+      .audit-card { margin-top: 2rem; }
+    }
     .stats-card {
       background: var(--ink);
       border-radius: 20px;
@@ -593,7 +636,6 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
       .hero { grid-template-columns: 1fr; }
-      .hero-right { display: none; }
       .services-grid { grid-template-columns: 1fr 1fr; }
       .cases, .plans, .testi-grid { grid-template-columns: 1fr 1fr; }
       .steps { grid-template-columns: 1fr 1fr; }
@@ -679,6 +721,25 @@
       <div class="trust-item">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.8 5.4L7 11l-4.6 3.1 1.8-5.4L0 5.4h5.2L7 0z"/></svg>
         LinkedIn Lead Generation Expert
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="audit-card">
+      <span class="audit-badge">Report in 48 Hrs</span>
+      <div class="audit-label"><span class="sq"></span>Your Free Audit Covers</div>
+      <div class="audit-num">3</div>
+      <div class="audit-sub">Reports: Ads · SEO · Local</div>
+      <hr class="audit-divider" />
+      <div class="audit-footer">
+        <div>
+          <div class="audit-plan">90-Day</div>
+          <div class="audit-plan-sub">Action Plan</div>
+        </div>
+        <div>
+          <div class="audit-fee">$0</div>
+          <div class="audit-fee-sub">Setup Fees</div>
+        </div>
       </div>
     </div>
   </div>
