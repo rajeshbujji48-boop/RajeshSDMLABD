@@ -15,7 +15,7 @@
   <meta name="twitter:description" content="India's performance-first ad agency. We run Google Ads, Meta Ads & LinkedIn Ads that fill your pipeline with qualified leads and drive real sales growth." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-  <meta name="theme-color" content="#00646A" />
+  <meta name="theme-color" content="#10270E" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
@@ -24,14 +24,14 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --ink:     #00646A;
-      --paper:   #EFEFEF;
-      --accent:  #00646A;
-      --accent2: #2B7D83;
-      --mid:     #55605F;
-      --rule:    #E0E0E0;
+      --ink:     #10270E;
+      --paper:   #E2F5E0;
+      --accent:  #0FC100;
+      --accent2: #FAD928;
+      --mid:     #3B4A38;
+      --rule:    #CFE8CB;
       --white:   #FFFFFF;
-      --gradient: linear-gradient(135deg, #00646A 0%, #00646A 100%);
+      --gradient: linear-gradient(135deg, #0FC100 0%, #0FC100 100%);
     }
 
     html { scroll-behavior: smooth; }
@@ -51,24 +51,24 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 4vw;
       height: 70px;
-      background: #00646A;
-      border-bottom: 3px solid #00646A;
+      background: #10270E;
+      border-bottom: 3px solid #10270E;
     }
     .nav-logo {
       display: flex; align-items: center; gap: 0.6rem;
       text-decoration: none; flex-shrink: 0;
     }
     .nav-logo-icon {
-      width: 38px; height: 38px; background: #EFEFEF; border-radius: 8px;
+      width: 38px; height: 38px; background: #E2F5E0; border-radius: 8px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.2rem; font-weight: 900; color: #00646A;
+      font-size: 1.2rem; font-weight: 900; color: #10270E;
       font-family: 'Montserrat', sans-serif; flex-shrink: 0;
     }
     .nav-logo-text {
       font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.3rem;
       color: #FFFFFF; letter-spacing: -0.5px; line-height: 1;
     }
-    .nav-logo-text span { color: #00646A; }
+    .nav-logo-text span { color: #10270E; }
     .nav-links { display: flex; gap: 0; list-style: none; align-items: center; }
     .nav-links a {
       text-decoration: none; color: rgba(255,255,255,0.75);
@@ -76,23 +76,23 @@
       text-transform: uppercase; padding: 0 1rem;
       transition: color 0.2s; white-space: nowrap;
     }
-    .nav-links a:hover { color: #00646A; }
+    .nav-links a:hover { color: #10270E; }
     .nav-phone {
-      color: #00646A; font-size: 0.82rem; font-weight: 700;
+      color: #10270E; font-size: 0.82rem; font-weight: 700;
       text-decoration: none; letter-spacing: 0.03em; white-space: nowrap;
       padding: 0 1rem;
       transition: opacity 0.2s;
     }
     .nav-phone:hover { opacity: 0.8; }
     .nav-cta {
-      background: #00646A; color: #FFFFFF;
+      background: #10270E; color: #FFFFFF;
       padding: 0.55rem 1.35rem; border-radius: 5px;
       font-size: 0.78rem; font-weight: 800; text-decoration: none;
       text-transform: uppercase; letter-spacing: 0.06em;
       transition: transform 0.15s, box-shadow 0.15s;
       white-space: nowrap; flex-shrink: 0;
     }
-    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,100,106,0.4); }
+    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(15,193,0,0.4); }
     /* Hamburger for mobile */
     .nav-hamburger {
       display: none; flex-direction: column; gap: 5px;
@@ -100,7 +100,7 @@
     }
     .nav-hamburger span {
       display: block; width: 24px; height: 2px;
-      background: #00646A; border-radius: 2px;
+      background: #10270E; border-radius: 2px;
     }
 
 
@@ -119,15 +119,15 @@
       content: '';
       position: absolute; right: -200px; top: -200px;
       width: 700px; height: 700px;
-      background: radial-gradient(circle, rgba(0,100,106,0.08) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(15,193,0,0.08) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(0,100,106,0.1); color: var(--accent);
+      background: rgba(15,193,0,0.1); color: var(--accent);
       font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
       padding: 0.35rem 0.85rem; border-radius: 100px; margin-bottom: 1.5rem;
-      border: 1px solid rgba(0,100,106,0.2);
+      border: 1px solid rgba(15,193,0,0.2);
     }
     .hero-eyebrow .dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 1.5s infinite; }
     @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
@@ -154,9 +154,9 @@
       font-size: 1rem; font-weight: 600; cursor: pointer; text-decoration: none;
       display: inline-flex; align-items: center; gap: 0.5rem;
       transition: transform 0.15s, box-shadow 0.2s;
-      box-shadow: 0 4px 16px rgba(0,100,106,0.3);
+      box-shadow: 0 4px 16px rgba(15,193,0,0.3);
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,100,106,0.45); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(15,193,0,0.45); }
     .btn-secondary {
       background: transparent; color: var(--ink);
       padding: 0.9rem 2rem; border-radius: 8px;
@@ -185,7 +185,7 @@
       content: '';
       position: absolute; top: -60px; right: -60px;
       width: 200px; height: 200px;
-      background: radial-gradient(circle, rgba(0,100,106,0.25), transparent 70%);
+      background: radial-gradient(circle, rgba(15,193,0,0.25), transparent 70%);
     }
     .stats-card-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); margin-bottom: 1.5rem; }
     .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
@@ -213,8 +213,8 @@
     /* ROI Ticker */
     .roi-ticker {
       margin-top: 1.5rem;
-      background: rgba(0,100,106,0.12);
-      border: 1px solid rgba(0,100,106,0.25);
+      background: rgba(15,193,0,0.12);
+      border: 1px solid rgba(15,193,0,0.25);
       border-radius: 10px;
       padding: 0.85rem 1.25rem;
       display: flex; align-items: center; gap: 0.75rem;
@@ -226,10 +226,10 @@
     /* ── LOGOS ── */
     /* ── MARQUEE STRIP ── */
     .marquee-strip {
-      background: #EFEFEF;
+      background: #E2F5E0;
       overflow: hidden;
-      border-top: 3px solid #00646A;
-      border-bottom: 3px solid #00646A;
+      border-top: 3px solid #10270E;
+      border-bottom: 3px solid #10270E;
     }
     .marquee-track {
       display: flex;
@@ -248,13 +248,13 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
       font-size: 1rem;
-      color: #00646A;
+      color: #10270E;
       letter-spacing: -0.3px;
       padding: 0 1.5rem;
       text-transform: uppercase;
     }
     .marquee-sep {
-      color: #00646A;
+      color: #10270E;
       font-size: 0.8rem;
       opacity: 0.45;
       flex-shrink: 0;
@@ -269,7 +269,7 @@
     .section-label {
       display: inline-block;
       font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em;
-      color: #00646A; margin-bottom: 1rem;
+      color: #10270E; margin-bottom: 1rem;
     }
     .section-title {
       font-family: 'Montserrat', sans-serif; font-weight: 800;
@@ -280,8 +280,8 @@
     .section-header { margin-bottom: 3.5rem; }
 
     /* ── SERVICES ── */
-    .services { background: #00646A; }
-    .services .section-label { color: #00646A; }
+    .services { background: #10270E; }
+    .services .section-label { color: #10270E; }
     .services .section-title { color: #ffffff; }
     .services .section-sub { color: rgba(255,255,255,0.55); }
     .services-grid {
@@ -293,7 +293,7 @@
       overflow: hidden;
     }
     .service-card {
-      background: #00646A;
+      background: #10270E;
       border: none;
       border-right: 1px solid rgba(255,255,255,0.1);
       border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -303,10 +303,10 @@
     }
     .service-card:nth-child(even) { border-right: none; }
     .service-card:nth-last-child(-n+2) { border-bottom: none; }
-    .service-card:hover { background: #004F54; }
+    .service-card:hover { background: #0A1F0A; }
     .service-icon {
       width: 56px; height: 56px;
-      background: #EFEFEF;
+      background: #E2F5E0;
       border-radius: 6px;
       display: flex; align-items: center; justify-content: center;
       font-size: 1.5rem; margin-bottom: 1.25rem;
@@ -314,7 +314,7 @@
     }
     .service-tag {
       font-size: 0.7rem; font-weight: 800;
-      color: #00646A; letter-spacing: 0.1em;
+      color: #10270E; letter-spacing: 0.1em;
       text-transform: uppercase; margin-bottom: 0.6rem;
     }
     .service-card h3 {
@@ -342,7 +342,7 @@
       margin: 0 auto 1.5rem; position: relative; z-index: 1;
       box-shadow: 0 0 0 6px var(--paper), 0 0 0 8px var(--rule);
     }
-    .step-num.active { background: var(--gradient); box-shadow: 0 0 0 6px var(--paper), 0 0 0 8px rgba(0,100,106,0.3); }
+    .step-num.active { background: var(--gradient); box-shadow: 0 0 0 6px var(--paper), 0 0 0 8px rgba(15,193,0,0.3); }
     .step h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; }
     .step p  { font-size: 0.8rem; color: var(--mid); line-height: 1.6; }
 
@@ -358,12 +358,12 @@
       border-radius: 16px; padding: 2rem;
       transition: border-color 0.2s;
     }
-    .case-card:hover { border-color: rgba(0,100,106,0.5); }
+    .case-card:hover { border-color: rgba(15,193,0,0.5); }
     .case-tag {
       display: inline-block; font-size: 0.72rem; font-weight: 600;
       text-transform: uppercase; letter-spacing: 0.1em;
       color: var(--accent); margin-bottom: 1rem;
-      border: 1px solid rgba(0,100,106,0.35); padding: 0.25rem 0.6rem; border-radius: 4px;
+      border: 1px solid rgba(15,193,0,0.35); padding: 0.25rem 0.6rem; border-radius: 4px;
     }
     .case-card h3 { font-family: 'Montserrat', sans-serif; font-size: 1rem; margin-bottom: 1rem; color: var(--white); }
     .case-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem; }
@@ -382,7 +382,7 @@
     .why-item { display: flex; gap: 1rem; }
     .why-icon {
       width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
-      background: rgba(0,100,106,0.1); display: flex; align-items: center; justify-content: center;
+      background: rgba(15,193,0,0.1); display: flex; align-items: center; justify-content: center;
       font-size: 1.1rem; margin-top: 2px;
     }
     .why-item h4 { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.3rem; }
@@ -401,7 +401,7 @@
     .roas-meter { margin-bottom: 2rem; }
     .roas-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.45); margin-bottom: 0.5rem; }
     .roas-value { font-family: 'Montserrat', sans-serif; font-size: 3rem; font-weight: 800;
-      background: linear-gradient(90deg, #00646A, #00646A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+      background: linear-gradient(90deg, #10270E, #10270E); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .roas-sub { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 0.25rem; }
     .bar-rows { display: flex; flex-direction: column; gap: 0.75rem; }
     .bar-row { }
@@ -447,7 +447,7 @@
     .plan-btn:hover { background: var(--ink); color: var(--white); }
     .plan.featured .plan-btn {
       background: var(--gradient); color: var(--white); border-color: transparent;
-      box-shadow: 0 4px 16px rgba(0,100,106,0.35);
+      box-shadow: 0 4px 16px rgba(15,193,0,0.35);
     }
     .plan.featured .plan-btn:hover { opacity: 0.9; }
 
@@ -460,7 +460,7 @@
       transition: transform 0.2s;
     }
     .testi-card:hover { transform: translateY(-3px); }
-    .stars { color: #00646A; font-size: 0.9rem; margin-bottom: 1rem; }
+    .stars { color: #10270E; font-size: 0.9rem; margin-bottom: 1rem; }
     .testi-text { font-size: 0.875rem; color: var(--mid); line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; }
     .testi-author { display: flex; align-items: center; gap: 0.75rem; }
     .avatar {
@@ -475,7 +475,7 @@
     .faq { background: var(--white); }
     .faq-accordion { max-width: 820px; display: flex; flex-direction: column; gap: 0.75rem; }
     .faq-card { border: 1.5px solid var(--rule); border-radius: 12px; overflow: hidden; transition: border-color 0.2s; }
-    .faq-card.open { border-color: #00646A; }
+    .faq-card.open { border-color: #10270E; }
     .faq-toggle {
       width: 100%; background: none; border: none; cursor: pointer;
       display: flex; align-items: center; justify-content: space-between;
@@ -484,7 +484,7 @@
     .faq-toggle span:first-child { font-weight: 700; font-size: 0.95rem; color: var(--ink); line-height: 1.4; }
     .faq-icon {
       width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
-      background: #00646A; color: #FFFFFF;
+      background: #10270E; color: #FFFFFF;
       font-size: 1.2rem; font-weight: 800;
       display: flex; align-items: center; justify-content: center;
       transition: transform 0.25s;
@@ -505,7 +505,7 @@
     .lead-form {
       max-width: 640px; margin: 3rem auto 0;
       background: var(--white);
-      border: 2px solid #00646A;
+      border: 2px solid #10270E;
       border-radius: 8px; padding: 2.5rem;
       text-align: left;
     }
@@ -569,7 +569,7 @@
       color: rgba(255,255,255,0.6); text-decoration: none;
       transition: color 0.2s;
     }
-    .footer-bottom-links a:hover { color: #00646A; }
+    .footer-bottom-links a:hover { color: #10270E; }
     .footer-bottom-links .sep {
       margin: 0 0.6rem; opacity: 0.35;
     }
@@ -621,7 +621,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap" as="style" />
 </head>
 <body>
-<a href="#services" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;focus:static" onfocus="this.style.cssText='position:fixed;top:0;left:0;background:#00646A;color:#FFFFFF;padding:0.75rem 1.5rem;z-index:9999;font-weight:700;font-size:1rem;'" onblur="this.style.cssText='position:absolute;left:-9999px;'" tabindex="0">Skip to main content</a>
+<a href="#services" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;focus:static" onfocus="this.style.cssText='position:fixed;top:0;left:0;background:#10270E;color:#FFFFFF;padding:0.75rem 1.5rem;z-index:9999;font-weight:700;font-size:1rem;'" onblur="this.style.cssText='position:absolute;left:-9999px;'" tabindex="0">Skip to main content</a>
 
 <!-- NAV -->
 <nav role="navigation" aria-label="Main navigation">
@@ -644,7 +644,7 @@
 </nav>
 
 <!-- Mobile Nav Drawer -->
-<div id="mobileNav" style="display:none; position:fixed; top:70px; left:0; right:0; background:#00646A; border-bottom:3px solid #00646A; z-index:99; padding:1.5rem 5vw;">
+<div id="mobileNav" style="display:none; position:fixed; top:70px; left:0; right:0; background:#10270E; border-bottom:3px solid #10270E; z-index:99; padding:1.5rem 5vw;">
   <ul style="list-style:none; display:flex; flex-direction:column; gap:1rem;">
     <li><a href="#" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:700; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.06em;">Home</a></li>
     <li><a href="#services" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:700; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.06em;" onclick="toggleMobileNav()">Google Ads</a></li>
@@ -652,8 +652,8 @@
     <li><a href="#services" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:700; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.06em;" onclick="toggleMobileNav()">Local SEO</a></li>
     <li><a href="#why" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:700; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.06em;" onclick="toggleMobileNav()">About</a></li>
     <li><a href="#contact" style="color:rgba(255,255,255,0.8); text-decoration:none; font-weight:700; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.06em;" onclick="toggleMobileNav()">Contact</a></li>
-    <li><a href="tel:+918790282479" style="color:#00646A; text-decoration:none; font-weight:800; font-size:1rem;">+91 87902 82479</a></li>
-    <li><a href="#contact" style="display:inline-block; background:#00646A; color:#FFFFFF; padding:0.65rem 1.5rem; border-radius:5px; font-weight:800; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em; text-decoration:none;" onclick="toggleMobileNav()">Free Audit</a></li>
+    <li><a href="tel:+918790282479" style="color:#10270E; text-decoration:none; font-weight:800; font-size:1rem;">+91 87902 82479</a></li>
+    <li><a href="#contact" style="display:inline-block; background:#10270E; color:#FFFFFF; padding:0.65rem 1.5rem; border-radius:5px; font-weight:800; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.06em; text-decoration:none;" onclick="toggleMobileNav()">Free Audit</a></li>
   </ul>
 </div>
 
@@ -1104,7 +1104,7 @@
 
 <!-- LEAD FORM -->
 <section class="lead" id="contact">
-  <div class="section-label" style="color:#00646A;">Free Audit</div>
+  <div class="section-label" style="color:#10270E;">Free Audit</div>
   <h2 class="section-title" style="color:#ffffff;">Get Your Free Ads Audit</h2>
   <div class="lead-form" id="auditForm">
     <p class="form-intro">Tell us about your business. We'll review your Google Ads, Meta Ads &amp; LinkedIn Ads and send you a free audit within 48 hours.</p>
