@@ -107,11 +107,11 @@
     /* ── HERO ── */
     .hero {
       min-height: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 4rem;
-      padding: 90px 5vw 40px;
+      display: block;
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 90px 5vw 60px;
       position: relative;
       overflow: hidden;
     }
@@ -145,9 +145,9 @@
     .hero h1 em { font-style: normal; color: var(--accent); }
     .hero-sub {
       font-size: 1.1rem; color: var(--mid);
-      max-width: 500px; margin-bottom: 2.5rem; line-height: 1.7;
+      max-width: 560px; margin: 0 auto 2.5rem; line-height: 1.7;
     }
-    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; justify-content: center; }
     .btn-primary {
       background: var(--gradient); color: var(--white);
       padding: 0.9rem 2rem; border-radius: 8px; border: none;
@@ -167,7 +167,7 @@
     }
     .btn-secondary:hover { border-color: var(--accent2); color: var(--accent2); }
 
-    .hero-trust { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 0; }
+    .hero-trust { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 0; justify-content: center; }
     .trust-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--mid); }
     .trust-item svg { color: #22C55E; flex-shrink: 0; }
 
@@ -679,38 +679,6 @@
       <div class="trust-item">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.8 5.4L7 11l-4.6 3.1 1.8-5.4L0 5.4h5.2L7 0z"/></svg>
         LinkedIn Lead Generation Expert
-      </div>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="stats-card" style="contain:layout style;">
-      <div class="stats-card-label">Client Performance Dashboard — Q1 2026</div>
-      <div class="stats-grid">
-        <div class="stat-box">
-          <div class="stat-num">4.8×</div>
-          <div class="stat-desc">Average ROAS across all clients</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num">62%</div>
-          <div class="stat-desc">Avg. reduction in cost per lead</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num">340+</div>
-          <div class="stat-desc">Active campaigns running</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num">98%</div>
-          <div class="stat-desc">Client retention rate</div>
-        </div>
-      </div>
-      <div class="platform-badges">
-        <span class="badge google">🔵 Google Ads</span>
-        <span class="badge meta">📘 Meta Ads</span>
-        <span class="badge linkedin">💼 LinkedIn Ads</span>
-      </div>
-      <div class="roi-ticker">
-        <span class="ticker-icon">🔥</span>
-        <span class="ticker-text">Last month: Client in <strong>EdTech</strong> grew leads by <strong>3.2× in 60 days</strong></span>
       </div>
     </div>
   </div>
