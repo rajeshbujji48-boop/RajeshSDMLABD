@@ -608,8 +608,8 @@
     .lead .section-title { color: var(--white); }
     .lead-form {
       max-width: 640px; margin: 0;
-      background: var(--white);
-      border: 2px solid #0B1220;
+      background: #0B0F14;
+      border: 1px solid rgba(255,255,255,0.1);
       border-radius: 8px; padding: 2.5rem;
       text-align: left;
     }
@@ -619,21 +619,21 @@
     }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
     .form-field { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
-    .form-field label { font-size: 0.78rem; font-weight: 600; color: var(--mid); text-align: left; }
+    .form-field label { font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.6); text-align: left; text-transform: uppercase; letter-spacing: 0.03em; }
     .form-field input, .form-field select, .form-field textarea {
-      background: var(--paper); border: 1px solid var(--rule);
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15);
       border-radius: 8px; padding: 0.75rem 1rem;
-      font-size: 0.9rem; color: var(--ink); font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem; color: #FFFFFF; font-family: 'DM Sans', sans-serif;
       transition: border-color 0.2s;
       outline: none;
     }
     .form-field input:focus, .form-field select:focus, .form-field textarea:focus {
       border-color: var(--accent);
     }
-    .form-field input::placeholder, .form-field textarea::placeholder { color: rgba(0,0,0,0.35); }
-    .form-field select option { background: var(--white); color: var(--ink); }
-    .form-field input.error, .form-field select.error { border-color: #DC2626; background: #FEF2F2; }
-    .field-error { display: none; font-size: 0.75rem; color: #DC2626; margin-top: -0.15rem; }
+    .form-field input::placeholder, .form-field textarea::placeholder { color: rgba(255,255,255,0.35); }
+    .form-field select option { background: #0B0F14; color: #FFFFFF; }
+    .form-field input.error, .form-field select.error { border-color: #DC2626; background: rgba(220,38,38,0.08); }
+    .field-error { display: none; font-size: 0.75rem; color: #F87171; margin-top: -0.15rem; }
     .field-error.show { display: block; }
     .form-submit {
       width: 100%; padding: 1rem; background: var(--gradient); color: #FFFFFF;
@@ -643,9 +643,11 @@
       font-family: 'DM Sans', sans-serif;
     }
     .form-submit:hover { opacity: 0.9; transform: translateY(-1px); }
-    .form-note { font-size: 0.75rem; color: rgba(0,0,0,0.4); margin-top: 1rem; text-align: center; }
+    .form-note { font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-top: 1rem; text-align: center; }
     .form-intro { text-align: left; }
-    .form-intro { color: var(--mid); }
+    .form-intro { color: rgba(255,255,255,0.6); }
+    .lead-form .section-label { color: var(--accent) !important; }
+    .lead-form h2.section-title { color: #FFFFFF !important; }
 
     /* ── FOOTER ── */
     footer {
@@ -1151,8 +1153,8 @@
       </div>
     </div>
     <div class="lead-form" id="auditForm">
-    <div class="section-label" style="color:#0B1220;">Free Audit</div>
-    <h2 class="section-title" style="color:#0B1220;font-size:1.4rem;margin-bottom:0.75rem;">Get Your Free Ads Audit</h2>
+    <div class="section-label" style="color:#2DD4E8;">Free Audit</div>
+    <h2 class="section-title" style="color:#FFFFFF;font-size:1.4rem;margin-bottom:0.75rem;">Get Your Free Ads Audit</h2>
     <p class="form-intro">Tell us about your business. We'll review your Google Ads, Meta Ads &amp; LinkedIn Ads and send you a free audit within 48 hours.</p>
     <div class="form-field">
       <label for="f_name">Full Name *</label>
