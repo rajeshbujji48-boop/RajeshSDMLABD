@@ -78,12 +78,13 @@
     }
     .nav-links a:hover { color: #0B1220; }
     .nav-phone {
-      color: #0B1220; font-size: 0.82rem; font-weight: 700;
-      text-decoration: none; letter-spacing: 0.03em; white-space: nowrap;
-      padding: 0 1rem;
+      color: #FFFFFF; font-size: 0.85rem; font-weight: 800;
+      text-decoration: none; letter-spacing: 0.02em; white-space: nowrap;
+      padding: 0 1rem; display: flex; align-items: center; gap: 0.4rem;
       transition: opacity 0.2s;
     }
     .nav-phone:hover { opacity: 0.8; }
+    .nav-phone .nav-phone-icon { color: #2DD4E8; font-size: 0.95rem; }
     .nav-cta {
       background: #0B1220; color: #FFFFFF;
       padding: 0.55rem 1.35rem; border-radius: 5px;
@@ -170,6 +171,17 @@
       transition: border-color 0.2s, color 0.2s;
     }
     .btn-secondary:hover { border-color: var(--accent2); color: var(--accent2); }
+    .btn-whatsapp {
+      background: #25D366; color: #FFFFFF;
+      padding: 0.9rem 2rem; border-radius: 8px; border: none;
+      font-size: 1rem; font-weight: 700; cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      text-transform: uppercase; letter-spacing: 0.02em;
+      transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+    }
+    .btn-whatsapp:hover { transform: translateY(-2px); background: #20BD5A; box-shadow: 0 8px 28px rgba(37,211,102,0.5); }
+    .btn-whatsapp svg { flex-shrink: 0; }
 
     .hero-trust { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 0; justify-content: center; }
     .trust-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--mid); }
@@ -383,7 +395,7 @@
     }
     .service-tag {
       font-size: 0.7rem; font-weight: 800;
-      color: #0B1220; letter-spacing: 0.1em;
+      color: #ffffff; letter-spacing: 0.1em;
       text-transform: uppercase; margin-bottom: 0.6rem;
     }
     .service-card h3 {
@@ -543,7 +555,7 @@
 
     /* ── INDUSTRIES STRIP ── */
     .industries { background: #0B0F14; text-align: left; }
-    .industries .section-label { color: #FFFFFF; display: flex; align-items: center; gap: 0.6rem; }
+    .industries .section-label { color: #2DD4E8; display: flex; align-items: center; gap: 0.6rem; }
     .industries .section-label::before { content: ""; width: 22px; height: 2px; background: #2DD4E8; display: inline-block; }
     .industries .section-title { color: #FFFFFF; text-transform: uppercase; font-weight: 800; letter-spacing: 0.01em; }
     .industries .section-header { margin-bottom: 2rem; max-width: 100%; }
@@ -716,6 +728,35 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=DM+Sans:wght@400;500;600&display=swap" as="style" />
 </head>
 <body>
+<!-- PRELOADER -->
+<div id="page-preloader" style="position:fixed;inset:0;z-index:99999;background:linear-gradient(180deg,#0B0F2E 0%,#2038B0 100%);display:flex;align-items:center;justify-content:center;transition:opacity 0.5s ease, visibility 0.5s ease;">
+  <div style="display:flex;align-items:flex-end;gap:8px;height:80px;">
+    <span style="width:8px;height:40%;background:linear-gradient(180deg,#7FE8E0,#2DD4E8);border-radius:6px;animation:preloaderBar 1s ease-in-out infinite;animation-delay:0s;"></span>
+    <span style="width:8px;height:65%;background:linear-gradient(180deg,#7FE8E0,#2DD4E8);border-radius:6px;animation:preloaderBar 1s ease-in-out infinite;animation-delay:0.1s;"></span>
+    <span style="width:8px;height:100%;background:linear-gradient(180deg,#7FE8E0,#2DD4E8);border-radius:6px;animation:preloaderBar 1s ease-in-out infinite;animation-delay:0.2s;"></span>
+    <span style="width:8px;height:55%;background:linear-gradient(180deg,#7FE8E0,#2DD4E8);border-radius:6px;animation:preloaderBar 1s ease-in-out infinite;animation-delay:0.3s;"></span>
+    <span style="width:8px;height:80%;background:linear-gradient(180deg,#7FE8E0,#2DD4E8);border-radius:6px;animation:preloaderBar 1s ease-in-out infinite;animation-delay:0.4s;"></span>
+    <span style="width:8px;height:30%;background:linear-gradient(180deg,#7FE8E0,#2DD4E8);border-radius:6px;animation:preloaderBar 1s ease-in-out infinite;animation-delay:0.5s;"></span>
+  </div>
+</div>
+<style>
+@keyframes preloaderBar {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}
+</style>
+<script>
+  window.addEventListener('load', function () {
+    var pre = document.getElementById('page-preloader');
+    if (pre) {
+      setTimeout(function () {
+        pre.style.opacity = '0';
+        pre.style.visibility = 'hidden';
+        setTimeout(function () { pre.remove(); }, 500);
+      }, 300);
+    }
+  });
+</script>
 <a href="#services" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;focus:static" onfocus="this.style.cssText='position:fixed;top:0;left:0;background:#0B1220;color:#FFFFFF;padding:0.75rem 1.5rem;z-index:9999;font-weight:700;font-size:1rem;'" onblur="this.style.cssText='position:absolute;left:-9999px;'" tabindex="0">Skip to main content</a>
 
 <!-- NAV -->
@@ -731,7 +772,7 @@
     <li><a href="#why">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a class="nav-phone" href="tel:+918790282479">+91 87902 82479</a>
+  <a class="nav-phone" href="tel:+918790282479"><span class="nav-phone-icon">&#128222;</span> +91 87902 82479</a>
   <a class="nav-cta" href="#contact">Free Audit</a>
   <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Open navigation menu" type="button">
     <span></span><span></span><span></span>
@@ -760,8 +801,9 @@
     <p class="hero-sub">Google Ads. Meta Ads. LinkedIn Ads.<br>We manage your campaigns so you can focus on closing deals — not chasing leads.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Get Free Audit</a>
-      <a href="#results" class="btn-secondary">See Our Approach</a>
+      <a href="https://wa.me/918790282479?text=Hi%2C%20I%20want%20a%20free%20ads%20audit" target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2C6.486 2 2.01 6.476 2.01 11.994c0 1.99.573 3.845 1.564 5.408L2 22l4.735-1.541a9.943 9.943 0 0 0 5.269 1.51h.004c5.518 0 9.994-4.476 9.994-9.994C22 6.476 17.524 2 12.004 2zm0 18.033h-.003a8.02 8.02 0 0 1-4.088-1.121l-.293-.174-3.033.988.99-2.958-.191-.303a8.017 8.017 0 0 1-1.233-4.269c0-4.437 3.61-8.047 8.05-8.047 2.15 0 4.17.838 5.69 2.359a7.994 7.994 0 0 1 2.357 5.69c0 4.438-3.61 8.048-8.05 8.048z"/></svg> WhatsApp Us Now</a>
     </div>
+    <div class="hero-trust-label" style="font-size:0.75rem; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; color:var(--mid); margin-bottom:0.75rem;">Trusted by Businesses That Can't Afford Wasted Ad Spend</div>
     <div class="hero-trust">
       <div class="trust-item">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0l1.8 5.4H14l-4.6 3.3 1.8 5.4L7 11l-4.6 3.1 1.8-5.4L0 5.4h5.2L7 0z"/></svg>
